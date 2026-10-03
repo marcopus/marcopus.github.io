@@ -147,6 +147,13 @@ h1 em, h2 em { color: var(--green); font-weight: 600; }
 .choice-options { display: flex; flex-wrap: wrap; gap: 8px 17px; }
 .choice-options label { display: inline-flex; align-items: center; gap: 6px; color: #54564f; font-size: 11px; cursor: pointer; }
 .choice-options input { accent-color: var(--green); }
+.optional-label { color: var(--muted); font-family: var(--sans); font-size: 10px; font-weight: 400; }
+.skill-level-options { display: flex; flex-wrap: wrap; gap: 8px; margin-left: 33px; }
+.skill-level-options label { position: relative; cursor: pointer; }
+.skill-level-options input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.skill-level-options span { min-height: 38px; display: inline-flex; align-items: center; padding: 7px 11px; border: 1px solid var(--line); color: #55574f; font-size: 11px; }
+.skill-level-options input:checked + span { border-color: var(--green); background: var(--green); color: white; }
+.skill-level-options input:focus-visible + span { outline: 3px solid var(--orange); outline-offset: 3px; }
 .availability-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
 .availability-table th, .availability-table td { height: 39px; border-bottom: 1px solid var(--line); text-align: center; }
 .availability-table thead th { height: 34px; color: var(--muted); font-size: 10px; font-weight: 600; }
@@ -237,6 +244,7 @@ h1 em, h2 em { color: var(--green); font-weight: 600; }
   .instrument-option { padding-inline: 8px; column-gap: 8px; }
   .instrument-option > span:nth-of-type(2) { font-size: 11px; }
   .instrument-option small { font-size: 9px; }
+  .skill-level-options { margin-left: 0; }
   .contact-grid { grid-template-columns: 1fr; gap: 13px; }
   .footer-inner { min-height: 130px; flex-wrap: wrap; justify-content: space-between; padding-block: 21px; }
   .footer-inner > p { order: 3; width: 100%; text-align: left; }

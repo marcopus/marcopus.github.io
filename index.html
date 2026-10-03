@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Join a relaxed, inclusive jam session in Nijmegen. The woonkamer jam is a welcoming living-room music space for all skill levels and neurotypes."
+      content="Join a relaxed, accessible and inclusive jam session in Nijmegen. The woonkamer jam is a welcoming living-room music space for all skill levels and neurotypes."
     />
     <meta name="theme-color" content="#eef1e9" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_NL" />
     <meta property="og:site_name" content="woonkamer jam" />
-    <meta property="og:title" content="Inclusive Jam Sessions in Nijmegen | woonkamer jam" />
+    <meta property="og:title" content="Accessible Jam Sessions in Nijmegen | woonkamer jam" />
     <meta
       property="og:description"
       content="A welcoming living-room jam session and music space in Nijmegen. All skill levels and neurotypes are welcome."
     />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Inclusive Jam Sessions in Nijmegen | woonkamer jam" />
+    <meta name="twitter:title" content="Accessible Jam Sessions in Nijmegen | woonkamer jam" />
     <meta
       name="twitter:description"
       content="A welcoming living-room jam session and music space in Nijmegen. All skill levels and neurotypes are welcome."
     />
-    <title>Inclusive Jam Sessions in Nijmegen | woonkamer jam</title>
+    <title>Accessible Jam Sessions in Nijmegen | woonkamer jam</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./app.js" defer></script>
   </head>
@@ -47,7 +47,7 @@
           <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Nijmegen · making music together</p>
           <h1 id="hero-title">No stage.<br /><em>Room</em> for you.</h1>
           <p class="hero-intro">
-            A welcoming, inclusive living-room jam session in Nijmegen — an informal music room to play,
+            A welcoming, accessible and inclusive living-room jam session in Nijmegen — an informal music room to play,
             listen and connect, not a rehearsal room for hire. Come as you are: every skill level and neurotype is welcome.
           </p>
           <a class="button button-primary" href="#interest">Let me know you're interested <span aria-hidden="true">↓</span></a>
@@ -62,7 +62,7 @@
           <div class="organ" aria-hidden="true"><i></i><b></b><span></span></div>
           <div class="guitar-shape" aria-hidden="true"><i></i><b></b></div>
           <div class="rug" aria-hidden="true"></div>
-          <div class="art-caption"><span>INCLUSIVE JAM</span><span>● Nijmegen</span></div>
+          <div class="art-caption"><span>ACCESSIBLE JAM</span><span>● Nijmegen</span></div>
           <div class="floating-note note-one" aria-hidden="true">♪</div>
           <div class="floating-note note-two" aria-hidden="true">♫</div>
         </div>
@@ -204,7 +204,17 @@
           </fieldset>
 
           <fieldset class="form-fieldset">
-            <legend><span class="step">02</span> When are you usually available?</legend>
+            <legend><span class="step">02</span> How would you describe your current skill level? <span class="optional-label">(optional)</span></legend>
+            <p class="field-hint">This just helps us get a feel for the group. Every level is welcome.</p>
+            <div class="skill-level-options">
+              <label><input type="radio" name="skill-level" value="Just starting out"><span>Just starting out</span></label>
+              <label><input type="radio" name="skill-level" value="Intermediate"><span>Intermediate</span></label>
+              <label><input type="radio" name="skill-level" value="Experienced"><span>Experienced</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend><span class="step">03</span> When are you usually available?</legend>
             <p class="field-hint">Select any day and time slot that could work for you. Leave everything unchecked if you're flexible.</p>
             <table class="availability-table">
               <thead>
@@ -251,7 +261,7 @@
           </fieldset>
 
           <fieldset class="form-fieldset contact-fieldset">
-            <legend><span class="step">03</span> How can we reach you?</legend>
+            <legend><span class="step">04</span> How can we reach you?</legend>
             <p class="field-hint">Your name is required. Please provide an email address or phone number so we can get in touch.</p>
             <label class="input-label name-input" for="name">Name
               <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>

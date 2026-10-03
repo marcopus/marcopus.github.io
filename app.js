@@ -67,6 +67,7 @@ function buildMessage() {
     return `- ${input.value}: ${gearChoice?.value ?? "no preference given"}`;
   });
   const availability = data.getAll("availability");
+  const skillLevel = data.get("skill-level") || "not provided";
 
   return [
     "Hi! I'm interested in the woonkamer jam in Nijmegen.",
@@ -74,6 +75,7 @@ function buildMessage() {
     "What I play or would like to try:",
     instruments.length ? instruments.join("\n") : "- No instrument chosen yet / I might come to listen",
     "",
+    `Self-rated skill level: ${skillLevel}`,
     `Availability: ${availability.length ? availability.join(", ") : "no preference given"}`,
     `Email: ${data.get("email") || "not provided"}`,
     `Phone: ${data.get("phone") || "not provided"}`,
