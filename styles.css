@@ -50,40 +50,13 @@ h1 em, h2 em { color: var(--green); font-weight: 600; }
 .hero-note { margin: 20px 0 0; color: var(--muted); font-size: 12px; }
 .hero-note span { margin-right: 7px; color: var(--orange); font-size: 15px; }
 
-.hero-art { position: relative; height: 440px; overflow: hidden; background: #e6decd; isolation: isolate; }
-.sun-shape { position: absolute; top: 45px; right: 85px; width: 154px; height: 154px; border-radius: 50%; background: #e8a76e; }
-.wall-frame { position: absolute; z-index: 1; top: 49px; left: 48px; width: 100px; height: 129px; display: grid; place-items: center; border: 7px solid #b6a88f; background: #f5eee0; transform: rotate(-3deg); }
-.wall-frame span { color: #60735e; font-family: var(--mono); font-size: 12px; font-weight: 500; line-height: 1.2; letter-spacing: .12em; }
-.lamp { position: absolute; z-index: 2; right: 52px; bottom: 117px; width: 87px; height: 210px; }
-.lamp i { position: absolute; top: 0; left: 6px; width: 80px; height: 56px; background: #e5bd78; clip-path: polygon(17% 0, 83% 0, 100% 100%, 0 100%); }
-.lamp b { position: absolute; top: 52px; left: 43px; width: 3px; height: 152px; background: #69634f; }
-.lamp:after { position: absolute; bottom: 0; left: 21px; width: 48px; height: 8px; border-radius: 50%; background: #69634f; content: ""; }
-.sofa { position: absolute; z-index: 3; bottom: 67px; left: 100px; width: 290px; height: 120px; border-radius: 18px 18px 7px 7px; background: #83927a; }
-.sofa:before { position: absolute; top: -28px; left: 17px; width: 256px; height: 55px; border-radius: 20px 20px 5px 5px; background: #71836c; content: ""; }
-.sofa i { position: absolute; top: 18px; left: 19px; z-index: 1; width: 111px; height: 66px; border-radius: 7px; background: #aab39c; }
-.sofa b { position: absolute; top: 18px; right: 19px; z-index: 1; width: 111px; height: 66px; border-radius: 7px; background: #aab39c; }
-.sofa span { position: absolute; bottom: -12px; left: 28px; width: 9px; height: 16px; background: #544e3f; box-shadow: 220px 0 #544e3f; }
-.organ { position: absolute; z-index: 4; right: 75px; bottom: 38px; width: 112px; height: 93px; border: 5px solid #543e32; border-bottom-width: 12px; background: #785c46; }
-.organ:before { position: absolute; top: 10px; left: 8px; width: 85px; height: 24px; border: 1px solid #c4ac84; background: repeating-linear-gradient(90deg, #f5edda 0 8px, #302a26 8px 10px); content: ""; }
-.organ i { position: absolute; top: 48px; left: 10px; width: 76px; height: 7px; background: #be9d68; }
-.organ b { position: absolute; right: 11px; bottom: 9px; width: 15px; height: 15px; border: 1px solid #c7a96d; border-radius: 50%; }
-.organ span { position: absolute; bottom: -35px; left: 9px; width: 8px; height: 31px; background: #543e32; box-shadow: 79px 0 #543e32; }
-.guitar-shape { position: absolute; z-index: 5; bottom: 57px; left: 28px; width: 39px; height: 174px; border-radius: 50% 50% 40% 40%; background: #d37d46; transform: rotate(22deg); }
-.guitar-shape:before { position: absolute; top: -90px; left: 17px; width: 7px; height: 123px; background: #795139; content: ""; }
-.guitar-shape:after { position: absolute; top: -94px; left: 11px; width: 21px; height: 11px; background: #795139; content: ""; }
-.guitar-shape i { position: absolute; top: 60px; left: 14px; width: 11px; height: 11px; border: 2px solid #6c4933; border-radius: 50%; }
-.guitar-shape b { position: absolute; top: 80px; left: 17px; width: 5px; height: 3px; background: #6c4933; }
-.rug { position: absolute; z-index: 2; bottom: 27px; left: 70px; width: 376px; height: 76px; border-radius: 50%; background: #d5aa75; }
-.art-caption { position: absolute; right: 23px; bottom: 16px; left: 23px; z-index: 6; display: flex; justify-content: space-between; color: #4e594b; font-family: var(--mono); font-size: 9px; letter-spacing: .05em; }
-.art-caption span:last-child { color: var(--green); }
-.floating-note { position: absolute; z-index: 6; color: var(--green); font-family: var(--serif); }
-.note-one { top: 95px; right: 44px; font-size: 37px; transform: rotate(12deg); }
-.note-two { top: 182px; left: 194px; color: #d37d46; font-size: 24px; transform: rotate(-12deg); }
-.plant { position: absolute; z-index: 2; bottom: 50px; left: 8px; width: 62px; height: 100px; }
-.plant b { position: absolute; bottom: 0; left: 17px; width: 35px; height: 31px; background: #c36f4a; clip-path: polygon(0 0, 100% 0, 88% 100%, 12% 100%); }
-.plant i { position: absolute; bottom: 28px; left: 23px; width: 18px; height: 55px; border-radius: 100% 0 100% 0; background: #61775d; transform: rotate(-16deg); transform-origin: bottom; }
-.plant i:nth-child(2) { transform: rotate(23deg); }
-.plant i:nth-child(3) { height: 69px; transform: rotate(0); }
+.hero-art { position: relative; height: 440px; overflow: hidden; background: #d9dfd4; isolation: isolate; }
+.hero-photo-main { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
+.room-photo-card { width: min(100%, 310px); margin: 34px 0 0 10px; padding: 5px 5px 0; background: var(--paper); box-shadow: 0 8px 24px rgb(35 37 31 / 18%); transform: rotate(2deg); }
+.room-photo-card img { width: 100%; aspect-ratio: 1.55; display: block; object-fit: cover; }
+.room-photo-card figcaption { padding: 5px 4px 7px; color: var(--green); font-family: var(--mono); font-size: 9px; letter-spacing: .04em; }
+.art-caption { position: absolute; right: 0; bottom: 0; left: 0; z-index: 1; display: flex; justify-content: space-between; padding: 11px 14px; background: rgb(38 58 48 / 82%); color: white; font-family: var(--mono); font-size: 9px; letter-spacing: .05em; }
+.art-caption span:last-child { color: #e6c39f; }
 
 .welcome-band { background: var(--green); color: white; }
 .welcome-inner { min-height: 94px; display: flex; align-items: center; gap: 18px; }
@@ -197,10 +170,6 @@ h1 em, h2 em { color: var(--green); font-weight: 600; }
 @media (max-width: 850px) {
   .hero { grid-template-columns: 1fr 1fr; gap: 27px; }
   .hero-art { height: 380px; }
-  .sofa { left: 62px; transform: scale(.86); transform-origin: bottom left; }
-  .rug { left: 30px; width: 330px; }
-  .organ { right: 27px; }
-  .lamp { right: 20px; transform: scale(.85); transform-origin: bottom; }
   .how, .gear-inner { gap: 55px; }
   .signup { gap: 50px; }
   .availability-table thead th:first-child, .availability-table tbody th { width: 38%; }
@@ -218,15 +187,6 @@ h1 em, h2 em { color: var(--green); font-weight: 600; }
   h1 { font-size: clamp(49px, 13vw, 63px); }
   .hero-intro { font-size: 14px; }
   .hero-art { height: 335px; }
-  .wall-frame { top: 35px; left: 28px; transform: scale(.83) rotate(-3deg); transform-origin: top left; }
-  .sun-shape { top: 37px; right: 43px; width: 128px; height: 128px; }
-  .sofa { bottom: 63px; left: 59px; transform: scale(.76); transform-origin: bottom left; }
-  .guitar-shape { left: 9px; transform: scale(.83) rotate(22deg); transform-origin: bottom; }
-  .organ { right: 20px; bottom: 36px; transform: scale(.84); transform-origin: bottom right; }
-  .lamp { right: 3px; bottom: 114px; transform: scale(.72); transform-origin: bottom; }
-  .rug { bottom: 24px; left: 26px; width: 300px; height: 63px; }
-  .plant { bottom: 38px; left: 0; transform: scale(.8); transform-origin: bottom left; }
-  .note-two { left: 145px; }
   .welcome-inner { min-height: 105px; gap: 11px; }
   .welcome-inner p { font-size: 12px; }
   .welcome-tail { display: none; }
